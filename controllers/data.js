@@ -19,7 +19,7 @@ exports.addNote = async (req, res) =>{
         const response = await Note.create(data);
         console.log(response);
         if(!response){
-            res.send("Data not created!!");
+            res.send("Data not created");
         }
         res.send("Data created");
     }
